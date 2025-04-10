@@ -17,10 +17,10 @@ const mainSection = document.querySelector('.main-section')
 const icon = document.getElementById("icon")
 
 //form label selection
-var contact_section =  document.querySelector(".contact-section")
-var label1= contact_section.querySelector(".label1")
-var label2= contact_section.querySelector(".label2")
-var label3= contact_section.querySelector(".label3")
+var contact_section = document.querySelector(".contact-section")
+var label1 = contact_section.querySelector(".label1")
+var label2 = contact_section.querySelector(".label2")
+var label3 = contact_section.querySelector(".label3")
 
 
 //when icon is clicked theme is toggled
@@ -29,16 +29,16 @@ icon.onclick = function () {
 
   //if theme is dark then sun icon will be displayed
   if (document.body.classList.contains("dark-theme")) {
-      icon.src = "images/sun.png"
+    icon.src = "images/sun.png"
   }
   //else moon icon will by default be displayed
   else {
-      icon.src = "images/moon.png"
+    icon.src = "images/moon.png"
   }
   //if theme is dark then form label is white else will remain black
-  label1.style.color="white"
-  label2.style.color="white"
-  label3.style.color="white"
+  label1.style.color = "white"
+  label2.style.color = "white"
+  label3.style.color = "white"
 }
 
 aboutMeBtn.addEventListener('click', () => {
@@ -172,7 +172,7 @@ try {
       },
     })
   )
-} catch (e) {}
+} catch (e) { }
 
 var wheelOpt = supportsPassive ? { passive: false } : false
 var wheelEvent =
@@ -198,7 +198,7 @@ function enableScroll() {
 
 document.addEventListener('DOMContentLoaded', () => {
   const observer = new MutationObserver((mutations) => {
-    
+
   })
 
   observer.observe(document.body, {
